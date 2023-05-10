@@ -1,0 +1,112 @@
+.product_details {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.5rem;
+    margin-top: 1.5rem;
+    font-family: var(--main-font);
+
+
+
+    .company_title {
+        font-size: 0.8rem;
+        color: var(--orange);
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+    .product_title {
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin: 0.5rem 0 1rem 0;
+    }
+
+    .product_description {
+        color: var(--dark-gb);
+    }
+
+
+
+    .pricing_section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 1rem 0;
+        font-weight: 700;
+
+        .price {
+            font-weight: 700;
+            font-size: 1.8rem;
+            line-height: 1;
+        }
+
+        .discount {
+            background-color: var(--pale-orange);
+            color: var(--orange);
+            border-radius: 0.25rem;
+            padding: 0.25rem 0.5rem;
+        }
+
+        .old_price {
+            color: var(--grey-blue);
+            text-decoration: line-through;
+            align-self: end;
+            justify-self: start;
+        }
+    }
+
+    .counter_control {
+        background-color: var(--light-gb);
+        margin: 0 auto 1rem auto;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        padding: 0.75rem 0;
+        border-radius: 0.5rem;
+
+        .counter_control_button {
+            background-color: transparent;
+            border: none;
+            
+            img {
+                width: 1rem;
+                background-color: transparent;
+            }
+        }
+
+        .counter_amount {
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+    }
+
+    .add_to_cart {
+        background-color: var(--orange);
+        border-radius: 0.5rem;
+        display: grid;
+        place-items: center;
+        color: var(--white);
+        padding: 1rem 0;
+        border: none;
+        font-size: 1rem;
+        font-weight: 700;
+
+        .button_info {
+            display: flex;
+            place-items: center;
+            svg {
+                margin-right: 1rem;
+                
+
+                path {
+                    fill: var(--white);
+                }
+            }
+            p {
+                padding: 0;
+                margin: 0;
+                text-align: left;
+            }
+        }
+        
+    }
+}
