@@ -20,7 +20,7 @@ function Details({pendingItems, onCounterAdd, onCounterSub, onCartAdd}) {
             </p>
 
             <Row className="pricing_section">
-                <Col xs lg={3}>
+                <Col xs lg={7} xl={5}>
                     <h2 className="price">$125.00</h2>
                 </Col>
                 <Col xs>
