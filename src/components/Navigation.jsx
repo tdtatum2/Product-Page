@@ -47,9 +47,31 @@ function Navigation({cartItems, onCartDelete}) {
           <Navbar.Brand href="#">
             <img src={sneakersLogo} alt="sneakers Logo" />
           </Navbar.Brand>
+          
+          <Navbar.Offcanvas
+          id={`offcanvasNavbar-expand-lg`}
+          aria-labelledby={`offcanvasNavbarLabel-expand-lg`}
+          placement="start"
+          show={show}
+          onHide={handleClose}
+          >
+          <Offcanvas.Header>
+            <button aria-label='Close'><img src={closeIcon} alt="Close" onClick={handleClose} /></button>
+          </Offcanvas.Header>
+          <Offcanvas.Body>
+            <Nav className="flex-grow-1 pe-3">
+              <Nav.Link href="#">Collections</Nav.Link>
+              <Nav.Link href="#">Men</Nav.Link>
+              <Nav.Link href="#">Women</Nav.Link>
+              <Nav.Link href="#">About</Nav.Link>
+              <Nav.Link href="#">Contact</Nav.Link>
+            </Nav>
+          </Offcanvas.Body>
+        </Navbar.Offcanvas>
+
           <Nav.Link href="#">
-            < CartIcon id={showCart ? 'cart-icon' : ''} onClick={cartFunction}/>
-            <div className="cart_item_number">
+            < CartIcon id={showCart ? 'cart-icon' : ''} onClick={cartFunction} className='cart_desktop'/>
+            <div className={cartItems > 0 ? "cart_item_number" : "hide_number"}>
               <p>{cartItems}</p>
             </div>
           </Nav.Link>
@@ -57,29 +79,10 @@ function Navigation({cartItems, onCartDelete}) {
         </div>
         
         
-        <Navbar.Offcanvas
-          id={`offcanvasNavbar-expand-lg`}
-          aria-labelledby={`offcanvasNavbarLabel-expand-lg`}
-          placement="start"
-          show={show}
-          onHide={handleClose}
-        >
-          <Offcanvas.Header>
-            <button aria-label='Close'><img src={closeIcon} alt="Close" onClick={handleClose} /></button>
-          </Offcanvas.Header>
-          <Offcanvas.Body>
-            <Nav className="justify-content-end flex-grow-1 pe-3">
-              <Nav.Link href="#action1">Collections</Nav.Link>
-              <Nav.Link href="#action2">Men</Nav.Link>
-              <Nav.Link href="#action2">Women</Nav.Link>
-              <Nav.Link href="#action2">About</Nav.Link>
-              <Nav.Link href="#action2">Contact</Nav.Link>
-            </Nav>
-          </Offcanvas.Body>
-        </Navbar.Offcanvas>
+        
       </Container>
 
-      <Modal show={showCart} onHide={handleCloseCart} dialogClassName="cart_modal" size='sm'>
+      <Modal show={showCart} onHide={handleCloseCart} dialogClassName="cart_modal" size='sm' backdrop={true} backdropClassName='nav-backdrop'>
         <Modal.Header>
           <Modal.Title>Cart</Modal.Title>
         </Modal.Header>

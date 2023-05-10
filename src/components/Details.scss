@@ -27,8 +27,6 @@
 
 
     .pricing_section {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
         margin: 1rem 0;
         font-weight: 700;
 
@@ -55,10 +53,9 @@
 
     .counter_control {
         background-color: var(--light-gb);
-        margin: 0 auto 1rem auto;
+        margin-bottom: 1rem;
         align-items: center;
         justify-content: center;
-        width: 100%;
         text-align: center;
         padding: 0.75rem 0;
         border-radius: 0.5rem;
@@ -67,10 +64,6 @@
             background-color: transparent;
             border: none;
             
-            img {
-                width: 1rem;
-                background-color: transparent;
-            }
         }
 
         .counter_amount {
@@ -89,6 +82,7 @@
         border: none;
         font-size: 1rem;
         font-weight: 700;
+        width: 100%;
 
         .button_info {
             display: flex;
@@ -108,5 +102,35 @@
             }
         }
         
+    }
+
+
+    @media screen and (min-width: 992px) {
+        width: 80%;
+        padding: 0 2rem;
+
+        .company_title {
+            font-size: 1rem;
+        }
+    
+        .product_title {
+            font-size: 2.5rem;
+            margin: 1rem 0 2rem 0;
+        }
+    
+        .product_description {
+            font-size: 1.1rem;
+        }
+
+        .counter_control {
+            margin-bottom: 0;
+        }
+
+        .add_to_cart {
+            transition: scale 0.25s ease-in-out;
+        }
+        .add_to_cart:hover {
+            box-shadow: 0 0 5px 5px var(--pale-orange);
+        }
     }
 }

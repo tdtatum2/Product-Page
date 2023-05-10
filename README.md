@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Frontend Mentor - Ecommerce product page solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [Ecommerce product page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6).
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [Screenshots](#screenshots)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Screenshots
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![](./src/assets/images/desktop.PNG)
+![](./src/assets/images/mobile.PNG)
 
-### `npm test`
+### Links
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Solution URL: [GitHub Repo](https://github.com/tdtatum2/Product-Page)
+- Live Site URL: [GitHub Pages](https://tdtatum2.github.io/Product-Page)
 
-### `npm run build`
+## My process
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Built with
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [ReactBootstrap](https://react-bootstrap.github.io) - A Bootstrap library adapted for ReactJS
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### What I learned
 
-### `npm run eject`
+This challenge was a ton of fun! It felt nice to work on something that feels so close to what a real developer job might entail.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+I learned a ton about React, Bootstrap, and custom CSS styling. I tried to break the components apart to make the code easier to understand and build upon. With that, came learning about passing state upwards: with parent components controlling the actual state and passing along handling functions to their child components. I learned a lot about Bootstrap modals and carousels as well, which made the project a lot easier to handle alone. Lastly, I learned a lot about custom CSS and overriding existing CSS within bootstrap to make sure my application looked as similar to the provided design as possible.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+All in all, I'm super proud of this project and I definitely feel like I've become a better developer because of it.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Continued development
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Things I want to learn:
+- Standard practices for structuring SCSS.
+- Standard practices for creating (and the file structure for) React components.
 
-## Learn More
+### Useful resources
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [My Custom CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/) - A useful CSS Reset template by Josh W Comeau recommended to me by Kamlesh Rajesh Yadav in a comment on my first ever Frontend Mentor post!
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Website - [Fin](https://www.fintatum.com)
+- Frontend Mentor - [@tdtatum2](https://www.frontendmentor.io/profile/tdtatum2)
